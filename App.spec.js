@@ -4,8 +4,8 @@ import renderer from "react-test-renderer";
 import App from "./App";
 
 describe("<App />", () => {
-  it("has 3 child", () => {
+  it("has 5 child", () => {
     const tree = renderer.create(<App />).toJSON();
-    expect(tree.children.length).toBe(3);
+    expect(tree.children.length).toBe(5);
   });
 });

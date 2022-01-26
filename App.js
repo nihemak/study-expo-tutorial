@@ -3,6 +3,7 @@ import { StatusBar } from "expo-status-bar";
 import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import * as ImagePicker from "expo-image-picker";
 import * as Sharing from "expo-sharing";
+import GroceryShoppingList from "./components/GroceryShoppingList";
 
 export default function App() {
   const [selectedImage, setSelectedImage] = React.useState(null);
@@ -62,6 +63,7 @@ export default function App() {
       <TouchableOpacity onPress={openImagePickerAsync} style={styles.button}>
         <Text style={styles.buttonText}>Pick a photo</Text>
       </TouchableOpacity>
+      <GroceryShoppingList/>
       <StatusBar style="auto" />
     </View>
   );
